@@ -27,6 +27,18 @@ public class Player {
         name = faker.funnyName().name();
     }
 
+    public int getDefensiveRating() {
+        return defensiveRating;
+    }
+
+    public int getOffensiveRating() {
+        return offensiveRating;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
     @Override
     public String toString() {
         return "name: " + name + ", height: " + height + ", position: " + position + ", offensiveRating: "
