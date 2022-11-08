@@ -17,8 +17,8 @@ public class Team {
 
     public Team() {
         regularSeasonRecord = new int[2];
-        generateTotalRatings();
         generatePlayers();
+        generateTotalRatings();
         generateName();
         generateCity();
     }

@@ -10,10 +10,13 @@ public class GameSimulator {
     }
 
     public void simulateMatch() {
-        if (homeTeam.getTotalRating() * 1.10 > awayTeam.getTotalRating()) {
+        if (homeTeam.getTotalRating() * 1.05 > awayTeam.getTotalRating()) {
             homeTeam.addWin();
-        } else {
             awayTeam.addLoss();
+        } else {
+            awayTeam.addWin();
+            homeTeam.addLoss();
+
         }
     }
 }
