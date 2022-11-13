@@ -6,7 +6,7 @@ public class BasketballSimulation {
         Team team2 = new Team();
         GameSimulator match =  new GameSimulator(team, team2);
         match.simulateMatch();
-        System.out.println(team.getRegularSeasonRecord());
-        System.out.println(team2.getRegularSeasonRecord());
+        Season regularSeason = new Season();
+        System.out.println(regularSeason.getSchedule());
     }
 }
