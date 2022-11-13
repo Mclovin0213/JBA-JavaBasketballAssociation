@@ -122,3 +122,18 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+
+##############################
+## IntelliJ
+##############################
+.idea
+*.iml
+*.ipr
+/out/
+
+##############################
+## Gradle
+##############################
+bin/
+build/
