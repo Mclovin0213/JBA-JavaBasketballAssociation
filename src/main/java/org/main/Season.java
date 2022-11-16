@@ -2,24 +2,32 @@ package org.main;
 
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Season {
-    private Team[] teams;
-    private final List<Point> schedule;
+    public Team[] teams = new Team[16];
 
     public Season(){
-        teams = new Team[16];
-        schedule = new ArrayList<>();
-        generateSchedule();
+        createTeams();
+        generateSchedules();
     }
 
-    private void generateSchedule() {
-
+    private void createTeams() {
+        for (int i = 0; i < 16; i++) {
+            teams[i] = new Team();
+        }
     }
 
-    public List<Point> getSchedule() {
-        return schedule;
+    private void generateSchedules() {
+        for (int i = 0; i < 16; i++) {
+            for (int j = 0; j < 4; j++) {
+                for (int k = 0; k < 16; k++) {
+                    if (i != k) {
+                        teams[i].regularSeasonSchedule.add(new Point(i, k));
+                    }
+                }
+            }
+        }
+
     }
 }

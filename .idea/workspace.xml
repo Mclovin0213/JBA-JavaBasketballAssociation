@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="720190fd-febe-4dee-b618-e8e58413d8c6" name="Changes" comment="Update .gitignore">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeasonTest.java" afterDir="false" />
+    <list default="true" id="720190fd-febe-4dee-b618-e8e58413d8c6" name="Changes" comment="Add functionality to Season.java">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,9 +15,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/main/BasketballSimulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/main/BasketballSimulation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/main/Season.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/main/Season.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/main/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/main/Team.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/main/BasketballSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/main/BasketballSimulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/main/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/main/Season.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/main/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/main/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,9 @@
       <updated>1667872500332</updated>
       <workItem from="1667872515278" duration="737000" />
       <workItem from="1668235060574" duration="3463000" />
-      <workItem from="1668314759718" duration="341000" />
+      <workItem from="1668314759718" duration="641000" />
+      <workItem from="1668500280972" duration="3093000" />
+      <workItem from="1668559081124" duration="400000" />
     </task>
     <task id="LOCAL-00001" summary="Add .gitignore">
       <created>1668314906969</created>
@@ -87,7 +90,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668315052438</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update .gitignore">
+      <created>1668315169200</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668315169200</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add functionality to Season.java">
+      <created>1668315322643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668315322643</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +124,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add .gitignore" />
     <MESSAGE value="Update .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update .gitignore" />
+    <MESSAGE value="Add functionality to Season.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add functionality to Season.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

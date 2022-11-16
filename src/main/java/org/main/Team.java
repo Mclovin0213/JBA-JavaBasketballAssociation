@@ -2,7 +2,9 @@ package org.main;
 
 import com.github.javafaker.Faker;
 
-import java.util.Arrays;
+import java.awt.*;
+import java.util.*;
+import java.util.List;
 
 public class Team {
     private String name;
@@ -10,13 +12,15 @@ public class Team {
     private int totalRating;
     private int totalOffensiveRating;
     private int totalDefensiveRating;
-    private int[] regularSeasonRecord = new int[2];
+    public List<Point> regularSeasonSchedule;
+    public int[] regularSeasonRecord;
     private Player[] players;
     Faker faker = new Faker();
 
 
     public Team() {
         regularSeasonRecord = new int[2];
+        regularSeasonSchedule = new ArrayList<>();
         generatePlayers();
         generateTotalRatings();
         generateName();
@@ -47,6 +51,10 @@ public class Team {
         for (int i = 0; i < 10; i++) {
             players[i] = new Player(position[i % 5]);
         }
+    }
+
+    public String getRegularSeasonSchedule() {
+        return regularSeasonSchedule.toString();
     }
 
     public String getCity() {
