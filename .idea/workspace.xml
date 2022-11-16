@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="720190fd-febe-4dee-b618-e8e58413d8c6" name="Changes" comment="Add functionality to Season.java">
+    <list default="true" id="720190fd-febe-4dee-b618-e8e58413d8c6" name="Changes" comment="Add v1 schedule generation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/main/PhysicalAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/main/SkillAttributes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/main/BasketballSimulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/main/BasketballSimulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/main/Season.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/main/Season.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/main/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/main/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/main/BasketballSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/main/BasketballSimulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/main/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/main/Season.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/main/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/main/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +42,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HFEab6DXBK7Jg1ERhDrUdPDmPo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -59,7 +57,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.intellij.sdk.settings.AppSettingsConfigurable&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,7 +72,8 @@
       <workItem from="1668235060574" duration="3463000" />
       <workItem from="1668314759718" duration="641000" />
       <workItem from="1668500280972" duration="3093000" />
-      <workItem from="1668559081124" duration="400000" />
+      <workItem from="1668559081124" duration="961000" />
+      <workItem from="1668582290741" duration="1180000" />
     </task>
     <task id="LOCAL-00001" summary="Add .gitignore">
       <created>1668314906969</created>
@@ -104,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668315322643</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add v1 schedule generation">
+      <created>1668559804862</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668559804862</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +131,8 @@
     <MESSAGE value="Add .gitignore" />
     <MESSAGE value="Update .gitignore" />
     <MESSAGE value="Add functionality to Season.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add functionality to Season.java" />
+    <MESSAGE value="Add v1 schedule generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add v1 schedule generation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
