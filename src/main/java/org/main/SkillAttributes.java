@@ -1,6 +1,6 @@
 package org.main;
 
-public class SkillAttributes {
+public class SkillAttributes{
     int shootingScore;
     double threePercent;
     double midPercent;
@@ -9,7 +9,12 @@ public class SkillAttributes {
     double floaterPercent;
     int basketballIQ;
 
-    public SkillAttributes() {
+    public SkillAttributes(String position) {
+        generateShootingPercentages();
 
+    }
+
+    private void generateShootingPercentages() {
+        freePercent =
     }
 }

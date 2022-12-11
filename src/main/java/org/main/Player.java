@@ -5,8 +5,9 @@ import com.github.javafaker.Faker;
 public class Player {
     private boolean isStar;
     private String name;
-    private int height;
-    private String position;
+    private final String position;
+    private PhysicalAttributes physicals;
+    private SkillAttributes skills;
     private int offensiveRating;
     private int defensiveRating;
     Faker faker = new Faker();
@@ -14,13 +15,11 @@ public class Player {
 
     public Player(String position) {
         generateName();
-        generateHeight();
         this.position = position;
+        this.physicals = new PhysicalAttributes(position);
+        this.skills = new SkillAttributes(position);
         this.offensiveRating = generateOffensiveRating();
-    }
 
-    private void generateHeight() {
-        height = faker.number().numberBetween(69, 89);
     }
 
     private void generateName() {
