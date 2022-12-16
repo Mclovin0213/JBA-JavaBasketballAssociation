@@ -1,20 +1,30 @@
 package org.main;
 
 public class SkillAttributes{
-    int shootingScore;
-    double threePercent;
+    Position position;
+
+    private double threePercent;
     double midPercent;
-    double layupPercent;
+    double finishingPercentage;
     double freePercent;
-    double floaterPercent;
+    double threeFrequency;
+    double midFrequency;
+    double drivePercentage;
+    double passingFrequency;
+    double passingScore;
+    double pickAndRollFrequency;
+
+
     int basketballIQ;
 
-    public SkillAttributes(String position) {
+    public SkillAttributes(Position position, String playerType) {
+        this.position = position;
+
         generateShootingPercentages();
 
     }
 
     private void generateShootingPercentages() {
-        freePercent =
     }
+
 }

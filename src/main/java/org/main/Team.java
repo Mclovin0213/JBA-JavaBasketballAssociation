@@ -17,22 +17,12 @@ public class Team {
     private Player[] players;
     Faker faker = new Faker();
 
-
     public Team() {
         regularSeasonRecord = new int[2];
         regularSeasonSchedule = new ArrayList<>();
         generatePlayers();
-        generateTotalRatings();
         generateName();
         generateCity();
-    }
-
-    private void generateTotalRatings() {
-        for (int i = 0; i < players.length; i++) {
-            totalOffensiveRating += players[i].getOffensiveRating();
-            totalDefensiveRating += players[i].getDefensiveRating();
-        }
-        totalRating = totalDefensiveRating + totalOffensiveRating;
     }
 
     private void generateCity() {
@@ -43,13 +33,26 @@ public class Team {
         name = faker.team().creature();
     }
 
-
     private void generatePlayers() {
         players = new Player[10];
-        String[] position = {"PG", "SG", "SF", "PF", "C"};
-        int posIndex = 0;
+        Position[] pos = {Position.PG, Position.SG, Position.SF, Position.PF, Position.C};
+        String playerType = "";
         for (int i = 0; i < 10; i++) {
-            players[i] = new Player(position[i % 5]);
+            int num = faker.number().numberBetween(0,19);
+            if (num == 0) {
+                playerType = "Two-Way Superstar";
+            } else if (num >= 1 && num < 3) {
+                playerType = "Offensive Superstar";
+            } else if (num >= 3 && num < 5) {
+                playerType = "Defensive Specialist";
+            } else if (num >= 5 && num < 7) {
+                playerType = "Star";
+            }  else if (num >= 7 && num < 17) {
+                playerType = "Role-Player";
+            } else {
+                playerType = "Scrub";
+            }
+            players[i] = new Player(pos[i % 5], playerType);
         }
     }
 
@@ -64,12 +67,9 @@ public class Team {
     public Player[] getPlayers() {
         return players;
     }
+
     public String getName() {
         return name;
-    }
-
-    public int getTotalRating() {
-        return totalRating;
     }
 
     public String getRegularSeasonRecord() {
